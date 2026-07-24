@@ -16,10 +16,10 @@
   <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="35" font-weight="bold" fill="#000080" text-anchor="middle" dominant-baseline="middle">
     India's Performance in Science Olympiads
   </text>
-  <circle cx="100" cy="100" r="10" fill="#000080">
+  <circle cx="100" cy="150" r="10" fill="#000080">
     <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite" />
   </circle>
-  <circle cx="700" cy="100" r="10" fill="#000080">
+  <circle cx="700" cy="50" r="10" fill="#000080">
     <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite" />
   </circle>
 </svg>
