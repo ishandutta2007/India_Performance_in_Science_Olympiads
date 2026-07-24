@@ -27,7 +27,7 @@ Discover insights, trends, and percentiles for Indian students in globally recog
 ## 🧬 India in International Biology Olympiad (IBO) Percentile
 ![India IBO Percentile](assets/india_ibo_percentile.png)
 
-## 💻 India in International Informatics Olympiad (IOI) Percentile
+## 💻 India in International Olympiad in Informatics (IOI) Percentile
 ![India IOI Percentile](assets/india_ioi_percentile.png)
 
 ## 🌌 India in International Olympiad on Astronomy and Astrophysics (IOAA) Percentile
