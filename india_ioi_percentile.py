@@ -138,4 +138,4 @@ plt.legend(loc="lower left", fontsize=11)
 # )
 
 plt.tight_layout()
-plt.savefig('assets/india_ioi_percentile.png')
+plt.savefig("assets/india_ioi_percentile.png")

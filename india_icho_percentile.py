@@ -138,4 +138,4 @@ plt.text(
 )
 
 plt.tight_layout()
-plt.savefig('assets/india_icho_percentile.png')
+plt.savefig("assets/india_icho_percentile.png")
