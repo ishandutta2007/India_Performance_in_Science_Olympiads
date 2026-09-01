@@ -3,6 +3,10 @@
 </div>
 
 <div align="center">
+  <img src="assets/social-preview.gif" alt="India Performance in Science Olympiads Showcase" width="850" />
+</div>
+
+<div align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/India_Performance_in_Science_Olympiads/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/India_Performance_in_Science_Olympiads?style=flat-square&color=yellow" alt="Stars"/></a>
   <a href="https://github.com/ishandutta2007/India_Performance_in_Science_Olympiads/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/India_Performance_in_Science_Olympiads?style=flat-square&color=blue" alt="Forks"/></a>
