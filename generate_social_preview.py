@@ -419,8 +419,8 @@ def build_social_preview_gif():
     HERO_DURATION = 3000       # 3.0s for cover slide
     PLOT_DURATION = 2500       # 2.5s for each chart slide
     OVERVIEW_DURATION = 3200   # 3.2s for final overview dashboard slide
-    TRANSITION_STEPS = 3       # 3 cross-fade frames between slides
-    TRANSITION_DUR = 70        # 70ms per transition frame
+    TRANSITION_STEPS = 0       # Clean direct slide cut for maximum crispness and optimal GIF compression
+    TRANSITION_DUR = 0
 
     n_slides = len(slides)
     for i in range(n_slides):
@@ -436,7 +436,7 @@ def build_social_preview_gif():
         else:
             durations.append(PLOT_DURATION)
 
-        # Add smooth cross-fade transition frames to next slide
+        # Add transition frames if specified
         for step in range(1, TRANSITION_STEPS + 1):
             alpha = step / (TRANSITION_STEPS + 1)
             blended = Image.blend(current_slide, next_slide, alpha)
@@ -444,9 +444,9 @@ def build_social_preview_gif():
             durations.append(TRANSITION_DUR)
 
     print("Quantizing and compiling GIF...")
-    # Quantize frames to 256-color palette to guarantee clean rendering and no transparency glitches
+    # Quantize frames to 256-color palette with no dithering for crisp text/lines and high LZW compression ratio
     quantized_frames = [
-        frame.quantize(colors=256, method=Image.Quantize.MEDIANCUT)
+        frame.quantize(colors=256, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
         for frame in frames
     ]
 
@@ -465,6 +465,7 @@ def build_social_preview_gif():
         duration=durations,
         loop=0,
         disposal=2,
+        optimize=True,
     )
     print(f"Generated {target_hyphen} (Size: {os.path.getsize(target_hyphen) / 1024:.1f} KB)")
 
@@ -476,6 +477,7 @@ def build_social_preview_gif():
         duration=durations,
         loop=0,
         disposal=2,
+        optimize=True,
     )
     print(f"Generated {target_underscore} (Size: {os.path.getsize(target_underscore) / 1024:.1f} KB)")
 
